@@ -1,70 +1,70 @@
-# Lodgify Tasks Lists
+# Getting Started with Create React App
 
-## Notes
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-As I was thinking about this POC I thought that the best way for me would be to
-treat it as a standalone package. The amount of thinking and repo setup that is
-required when we try to create something for 'the show' is too much and working
-with repo as a package gives me good starting point when it comes to removing
-unnecessary things. So, my assumptions are:
+## Available Scripts
 
-- No TS per-se. We write JS.
-  - Why? TS will be used as JSDoc comments, which became
-    more and more popular solution when writing packages. It'll still give type
-    annotations when package is used (and static analysis within IDE still
-    works) but will not require extra TS transpilation step. Which is good.
-- No CSS packages, only preprocessor (SCSS).
-  - Why? Cause it does not make any sense. If you need any css packages for this
-    kind of project then think again and then don't install it. Nobody proven to
-    me that using tailwind will be quicker than writing SCSS. I could, but... do
-    I have to? :)
-- 100% unit test coverage.
-  - Why? Well, because we can.
-- Storybook and visual testing
-  - Why? Because it's very helpful tool and I believe that in this case this is
-    how we should also test it. And Cypress would be an overkill.
+In the project directory, you can run:
 
-## THE PLAN
+### `npm start`
 
-More or less this will be the plan of the things that I need to do.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### PART 1 - Box component
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-@TODO:
+### `npm test`
 
-- layout component - flex
-- create css/scss structure (breakpoints, variables, other)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### PART 2 - Lists components
+### `npm run build`
 
-@TODO:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- think about aria and keyboard navigation
-- display mock.data
-- loader and how to handle it (probably Lazy Load and 'Skeleton' will be a good
-  fit)
-- restyle ul maybe?
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### PART 3 - CompletionBar component
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-@TODO:
+### `npm run eject`
 
-- html progress element restyling with cross browser compatibility
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### PART 4 - Mechanics
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-@TODO:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- fetching data mechanism
-- caching and cache validation (fetch/swr/react)
-- data values normalization (per task)
-- data injection
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-#### started from template
+## Learn More
 
-and updated heavily
-https://github.com/fabri4c/vite-react-starter
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
